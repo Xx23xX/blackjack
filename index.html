@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>BlackJack</h1>
+        <p class="" id="message-el">Want to play a round?</p>
+        <p>------------------------------</p>
+        <p class="cards">Dealer cards:</p>
+        <p class="numberP nospace" id="dealer-el"></p>
+        <p>Sum: <span class="numberP" id="dealer-sum-el"></span> </p>
+
+        <p class="cardsspace">Cards:</p>
+        <p class="numberP nospace" id="cards-el"></p>
+
+        <p class="cardsspace2">Sum: <span class="numberP" id="sum-el"><span></p>
+        <p>------------------------------</p>
+        <p class="money"> Your Money $<span id="money-el"> 10</span>
+        </p>
+        <P class="money dolar" id="yourbet-el">Make a Bet !!! </P>
+        <p class="blink-text" id="yourbet1"><span onclick="betOne()" class="bet">-$1</span>
+            <span onclick="betTwo()" class="bet">- $2 -</span>
+            <span onclick="betThree()" class="bet">$3-</span>
+        </p>
+        <p class="money dolar blink-text" id="bet-el"></p>
+        <button id="button1" onclick="startGame()">START GAME</button>
+        <button id="button2" onclick="newCard()">NEW CARD</button>
+        <button id="button4" onclick="double()">DOUBLE BET</button>
+        <button id="button3" onclick="hold()">HOLD</button>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
