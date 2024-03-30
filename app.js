@@ -79,12 +79,14 @@ function startGame() {
     } else {
         // betEl.textContent = " Choose the bet!!!!";
         yourbetEl.style.display = "block";
+
         document.getElementById("yourbet1").style.display = "block";
+
         document.getElementById("button2").style.display = "none";
         document.getElementById("button3").style.display = "none";
         document.getElementById("button3").style.display = "none";
         message = "Make a Bet !!!";
-        messageEl.style = "font-size: 38px;";
+
         messageEl.textContent = message;
         cardsEl.textContent = "";
         dealerElSum.textContent = "";
