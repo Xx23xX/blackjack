@@ -212,7 +212,7 @@ function hold() {
     }
     setTimeout(() => {
         if (dealerSum > 21) {
-            message = "Dealer Busts, You Win!!!";
+            message = "Dealer Busts, You WIN!!!";
             messageEl.style = "font-size: 42px;";
             money += win + win;
             betEl.textContent = "You WIN:  $" + win;
@@ -220,7 +220,7 @@ function hold() {
             console.log(money);
 
         } else if (sum > 21) {
-            message = "You lost!!!";
+            message = "You LOST!!!";
             messageEl.style = "font-size: 60px;";
             betEl.textContent = "You LOST:  $" + win;
 
@@ -230,7 +230,7 @@ function hold() {
             betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum > sum) {
-            message = "You lost!!!";
+            message = "You LOST!!!";
             messageEl.style = "font-size: 60px;";
             betEl.textContent = "You LOST:  $" + win;
 
@@ -242,7 +242,7 @@ function hold() {
 
         } else if (dealerSum < sum) {
             newGame = true;
-            message = "You Win!!!";
+            message = "You WIN!!!";
             messageEl.style = "font-size: 60px;";
             betEl.textContent = "You WIN:  $" + win;
             money += win + win;
