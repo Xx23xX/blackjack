@@ -203,12 +203,13 @@ button:hover {
 
 
 
+
     }
 
     h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 40px;
-
+        margin-top: -95px;
         color: #fae547;
         letter-spacing: 15px;
         text-align: center;
@@ -223,7 +224,7 @@ button:hover {
         letter-spacing: 2px;
         font-family: 'trebuchet ms', sans-serif;
         padding: 0;
-        margin: 3px;
+        margin: 0px;
         text-align: center;
         text-shadow: #000000 1px 2px;
 
@@ -250,11 +251,11 @@ button:hover {
         color: #0a7027d0;
         font-size: 15px;
         font-weight: 700;
-        padding: 10px 30px;
+        padding: 8px 30px;
         border-radius: 5px;
         border: none;
         cursor: pointer;
-        margin-top: 10px;
+        margin-top: 8px;
         margin-bottom: 5px;
         width: 250px;
         text-shadow: #14a93e 0px 1px 1px;
@@ -266,6 +267,7 @@ button:hover {
 
     .dolar {
         font-size: 18px;
+        color: rgb(255, 255, 255);
     }
 
     .cards {
@@ -274,7 +276,7 @@ button:hover {
         align-items: center;
         flex-wrap: wrap;
         gap: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .numberP {
@@ -289,4 +291,12 @@ button:hover {
         padding: 0;
     }
 
+    .cardsspace {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .firstLine {
+        width: 80%;
+    }
 }

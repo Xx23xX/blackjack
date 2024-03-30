@@ -129,7 +129,7 @@ function rendertGame() {
     c = 0;
     if (sum < 21) {
         message = "Do you want to draw a new card?";
-        messageEl.style = "font-size: 26px;";
+        messageEl.style = "font-size: 23px;";
         isAlive = true;
         if (dealerSum === 21) {
             message = "Dealer has BlackJack!!!";
