@@ -83,6 +83,9 @@ function startGame() {
         document.getElementById("button2").style.display = "none";
         document.getElementById("button3").style.display = "none";
         document.getElementById("button3").style.display = "none";
+        message = "Make a Bet !!!";
+        messageEl.style = "font-size: 44px;";
+        messageEl.textContent = message;
         cardsEl.textContent = "";
         dealerElSum.textContent = "";
         dealerEl.textContent = "";
@@ -129,7 +132,7 @@ function rendertGame() {
     c = 0;
     if (sum < 21) {
         message = "Do you want to draw a new card?";
-        messageEl.style = "font-size: 23px;";
+        messageEl.style = "font-size: 28px;";
         isAlive = true;
         if (dealerSum === 21) {
             message = "Dealer has BlackJack!!!";
