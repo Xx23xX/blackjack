@@ -129,12 +129,12 @@ function rendertGame() {
     c = 0;
     if (sum < 21) {
         message = "Do you want to draw a new card?";
-        messageEl.style = "font-size: 32px;";
+        messageEl.style = "font-size: 26px;";
         isAlive = true;
         if (dealerSum === 21) {
             message = "Dealer has BlackJack!!!";
             isAlive = false;
-            betEl.textContent = "You LOST1:  $" + bet;
+            betEl.textContent = "You LOST:  $" + bet;
 
             bet = 0;
         }
@@ -143,19 +143,19 @@ function rendertGame() {
         blackJack = true;
         messageEl.style = "font-size: 42px;";
         money += bet + bet;
-        betEl.textContent = "You WIN: 1 $" + bet;
+        betEl.textContent = "You WIN:  $" + bet;
         moneyEl.textContent = money;
         bet = 0;
 
     } else if (dealerSum === 21) {
         message = "Dealer has BlackJack!!!";
         isAlive = false;
-        betEl.textContent = "You LOST2:  $" + bet;
+        betEl.textContent = "You LOST:  $" + bet;
 
         bet = 0;
     } else if (sum > 21) {
         message = "Bust!!! You're out!";
-        betEl.textContent = "You LOST3:  $" + bet;
+        betEl.textContent = "You LOST:  $" + bet;
 
         bet = 0;
         isAlive = false;
@@ -212,24 +212,24 @@ function hold() {
             message = "Dealer Busts, You Win!!!";
             messageEl.style = "font-size: 42px;";
             money += win + win;
-            betEl.textContent = "You WIN: 2 $" + win;
+            betEl.textContent = "You WIN:  $" + win;
             moneyEl.textContent = money;
             console.log(money);
 
         } else if (sum > 21) {
             message = "You lost!!!";
             messageEl.style = "font-size: 60px;";
-            betEl.textContent = "You LOST6:  $" + win;
+            betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum === 21) {
             message = "Dealer has BlackJack!!!";
             messageEl.style = "font-size: 42px;";
-            betEl.textContent = "You LOST4:  $" + win;
+            betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum > sum) {
             message = "You lost!!!";
             messageEl.style = "font-size: 60px;";
-            betEl.textContent = "You LOST5:  $" + win;
+            betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum === sum) {
             message = "It's a tie!!!";
@@ -241,7 +241,7 @@ function hold() {
             newGame = true;
             message = "You Win!!!";
             messageEl.style = "font-size: 60px;";
-            betEl.textContent = "You WIN: 3 $" + win;
+            betEl.textContent = "You WIN:  $" + win;
             money += win + win;
 
         }
