@@ -84,7 +84,7 @@ function startGame() {
         document.getElementById("button3").style.display = "none";
         document.getElementById("button3").style.display = "none";
         message = "Make a Bet !!!";
-        messageEl.style = "font-size: 44px;";
+        messageEl.style = "font-size: 38px;";
         messageEl.textContent = message;
         cardsEl.textContent = "";
         dealerElSum.textContent = "";
