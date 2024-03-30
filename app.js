@@ -225,7 +225,7 @@ function hold() {
             console.log(money);
 
         } else if (sum > 21) {
-            message = "You LOST!!!";
+            message = "You Lost!!!";
             messageEl.style = "font-size: 60px;";
             betEl.textContent = "You LOST:  $" + win;
 
@@ -235,7 +235,7 @@ function hold() {
             betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum > sum) {
-            message = "You LOST!!!";
+            message = "You Lost!!!";
             messageEl.style = "font-size: 60px;";
             betEl.textContent = "You LOST:  $" + win;
 
