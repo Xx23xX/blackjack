@@ -147,7 +147,7 @@ function rendertGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!!!";
         blackJack = true;
-        messageEl.style = "font-size: 40px;";
+        messageEl.style = "font-size: 38px;";
         money += bet + bet;
         betEl.textContent = "You WIN:  $" + bet;
         moneyEl.textContent = money;
@@ -218,7 +218,7 @@ function hold() {
     setTimeout(() => {
         if (dealerSum > 21) {
             message = "Dealer Busts, You WIN!!!";
-            messageEl.style = "font-size: 42px;";
+            messageEl.style = "font-size: 38px;";
             money += win + win;
             betEl.textContent = "You WIN:  $" + win;
             moneyEl.textContent = money;
