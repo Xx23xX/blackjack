@@ -126,7 +126,7 @@ function rendertGame() {
             document.getElementById("button2").style.display = "none";
             document.getElementById("button3").style.display = "none";
             document.getElementById("button1").style.display = "block";
-
+            document.getElementById("button4").style.display = "none";
         }
     }, ((5 * c) * 1000));
     c = 0;
