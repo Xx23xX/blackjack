@@ -86,7 +86,7 @@ function startGame() {
         document.getElementById("button3").style.display = "none";
         document.getElementById("button3").style.display = "none";
         message = "Make a Bet !!!";
-        messageEl.style = "font-size: 42px;";
+        messageEl.style = "font-size: 36px;";
         messageEl.textContent = message;
         cardsEl.textContent = "";
         dealerElSum.textContent = "";
@@ -147,7 +147,7 @@ function rendertGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!!!";
         blackJack = true;
-        messageEl.style = "font-size: 42px;";
+        messageEl.style = "font-size: 40px;";
         money += bet + bet;
         betEl.textContent = "You WIN:  $" + bet;
         moneyEl.textContent = money;
@@ -226,7 +226,7 @@ function hold() {
 
         } else if (sum > 21) {
             message = "You Lost!!!";
-            messageEl.style = "font-size: 60px;";
+            messageEl.style = "font-size: 45px;";
             betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum === 21) {
@@ -236,19 +236,19 @@ function hold() {
 
         } else if (dealerSum > sum) {
             message = "You Lost!!!";
-            messageEl.style = "font-size: 60px;";
+            messageEl.style = "font-size: 45px;";
             betEl.textContent = "You LOST:  $" + win;
 
         } else if (dealerSum === sum) {
             message = "It's a tie!!!";
-            messageEl.style = "font-size: 50px;";
+            messageEl.style = "font-size: 45px;";
             betEl.textContent = "It's a tie!!!"
             money += win;
 
         } else if (dealerSum < sum) {
             newGame = true;
             message = "You WIN!!!";
-            messageEl.style = "font-size: 60px;";
+            messageEl.style = "font-size: 45px;";
             betEl.textContent = "You WIN:  $" + win;
             money += win + win;
 
