@@ -149,6 +149,7 @@ function rendertGame() {
         betEl.textContent = "You WIN:  $" + bet;
         moneyEl.textContent = money;
         bet = 0;
+        isAlive = false;
 
     } else if (dealerSum === 21) {
         message = "Dealer has BlackJack!!!";
