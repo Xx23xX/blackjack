@@ -129,6 +129,7 @@ function rendertGame() {
             document.getElementById("button3").style.display = "none";
             document.getElementById("button1").style.display = "block";
             document.getElementById("button4").style.display = "none";
+            messageEl.classList.add('blink-text');
         }
     }, ((5 * c) * 1000));
     c = 0;
@@ -152,6 +153,7 @@ function rendertGame() {
         moneyEl.textContent = money;
         bet = 0;
         isAlive = false;
+
 
     } else if (dealerSum === 21) {
         message = "Dealer has BlackJack!!!";
